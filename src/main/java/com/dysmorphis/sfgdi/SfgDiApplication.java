@@ -18,6 +18,10 @@ public class SfgDiApplication {
 
 		MyController myController = (MyController) ctx.getBean("myController");
 
+		PetController petController = (PetController) ctx.getBean("petController");
+		System.out.println("======= PET BEAN");
+		System.out.println(petController.whichPetIsTheBest());
+
 		//System.out.println(greeting);
 
 		System.out.println("======== primary BEAN");
